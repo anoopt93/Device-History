@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Anoop</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="battery_interval">1000*60*5</string>
+    <string name="storage_interval">1000*60*5;</string>
+    <string name="weather_interval">1000*60*5;</string>
+    <string name="network_interval">1000*60*5;</string>
+    <string name="device_interval">1000*60*5;</string>
+
+</resources>

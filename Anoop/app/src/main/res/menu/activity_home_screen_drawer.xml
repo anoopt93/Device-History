@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_battery"
+            android:icon="@drawable/battery_charging"
+            android:title="Battery" />
+        <item
+            android:id="@+id/nav_device"
+            android:icon="@drawable/cellphone_android_black"
+            android:title="Device" />
+        <item
+            android:id="@+id/nav_network"
+            android:icon="@drawable/signal_black"
+            android:title="Network" />
+        <item
+            android:id="@+id/nav_storage"
+            android:icon="@drawable/sd_black"
+            android:title="Storage" />
+        <item
+            android:id="@+id/nav_weather"
+            android:icon="@drawable/weather"
+            android:title="Weather" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_github"
+                android:icon="@drawable/github_circle"
+                android:title="Github" />
+            <item
+                android:id="@+id/nav_whatsapp"
+                android:icon="@drawable/whatsapp"
+                android:title="+919947425501" />
+        </menu>
+    </item>
+
+</menu>

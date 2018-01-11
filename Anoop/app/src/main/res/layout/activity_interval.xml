@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_interval"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/colorPrimary"
+    tools:context="com.sample.anoop.anoop.Interval">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/txt"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:text="Set Time Interval"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/txt">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:id="@+id/layout_battery_interval">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:text="Battery : "
+            android:textStyle="bold"
+            android:id="@+id/txt_battery"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:maxLength="2"
+            android:hint="minute"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit_text"
+            android:id="@+id/et_battery"
+            android:layout_toRightOf="@+id/txt_battery"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:text="Set"
+            android:id="@+id/btn_battery"
+            android:layout_toRightOf="@+id/et_battery"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:id="@+id/layout_storage_interval"
+        android:layout_below="@+id/layout_battery_interval">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:text="Stroage : "
+            android:textStyle="bold"
+            android:id="@+id/txt_storage"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:maxLength="2"
+            android:hint="minute"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit_text"
+            android:id="@+id/et_storage"
+            android:layout_toRightOf="@+id/txt_storage"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:text="Set"
+            android:id="@+id/btn_storage"
+            android:layout_toRightOf="@+id/et_storage"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:id="@+id/layout_weather_interval"
+        android:layout_below="@+id/layout_storage_interval">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:text="Weather : "
+            android:textStyle="bold"
+            android:id="@+id/txt_wether"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:maxLength="2"
+            android:hint="minute"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit_text"
+            android:id="@+id/et_weather"
+            android:layout_toRightOf="@+id/txt_wether"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:text="Set"
+            android:id="@+id/btn_weather"
+            android:layout_toRightOf="@+id/et_weather"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:id="@+id/layout_network_interval"
+        android:layout_below="@+id/layout_weather_interval">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:text="Network : "
+            android:textStyle="bold"
+            android:id="@+id/txt_network"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:maxLength="2"
+            android:hint="minute"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit_text"
+            android:id="@+id/et_network"
+            android:layout_toRightOf="@+id/txt_network"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:text="Set"
+            android:id="@+id/btn_network"
+            android:layout_toRightOf="@+id/et_network"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:id="@+id/layout_device_interval"
+        android:layout_below="@+id/layout_network_interval">
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:text="Device : "
+            android:textStyle="bold"
+            android:id="@+id/txt_device"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:maxLines="1"
+            android:maxLength="2"
+            android:hint="minute"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit_text"
+            android:id="@+id/et_device"
+            android:layout_toRightOf="@+id/txt_device"/>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:text="Set"
+            android:id="@+id/btn_device"
+            android:layout_toRightOf="@+id/et_device"/>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

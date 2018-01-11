@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sample.anoop.anoop">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HomeScreen"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name=".MyService"
+            android:enabled="true" />
+
+        <activity
+            android:name=".BatteryLevel"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Device"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Network"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Storage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BatteryLevelHistory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WeatherHistory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StorageHistory"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Interval"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Device_History"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".NetworkHistory"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
